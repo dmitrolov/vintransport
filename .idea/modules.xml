@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/privat24.iml" filepath="$PROJECT_DIR$/.idea/privat24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vintransport.iml" filepath="$PROJECT_DIR$/.idea/vintransport.iml" />
     </modules>
   </component>
 </project>

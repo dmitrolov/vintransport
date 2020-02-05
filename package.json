@@ -1,5 +1,6 @@
 {
-  "name": "privat24",
+  "homepage": "https://dmitrolov.github.io/vintransport/",
+  "name": "vintransport",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +11,7 @@
     "@types/node": "^12.12.26",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1",
@@ -17,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rmdir docs /s /q & react-scripts build & cp build/index.html build/404.html & move build docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
