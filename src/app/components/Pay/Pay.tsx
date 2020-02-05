@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Pay.sass';
 
 interface PayProps {
@@ -6,15 +6,24 @@ interface PayProps {
 }
 
 const Pay = (props: PayProps) => {
-  const [state, setState] = useState(true);
-
-  useEffect(() => {
-    console.log('[Pay WORKS!!!]', null);
-  }, [state]);
+  const [number, setNumber] = useState();
+  const [count, setCount] = useState('1');
 
   return (
-    <div className='pay'>
-      <button onClick={ props.onSubmit }>Pay</button>
+    <div className='pay-container'>
+      <input className='pay-container__number'
+             type="text"
+             inputMode='numeric'
+             placeholder='Маршрут'
+             value={ number }
+             onChange={ e => setNumber(e.target.value) } />
+      <input className='pay-container__count'
+             type="text"
+             inputMode='numeric'
+             placeholder='Кол-во билетов'
+             value={ count }
+             onChange={ e => setCount(e.target.value) } />
+      <button className='pay-container__submit'>Купить</button>
     </div>
   );
 };

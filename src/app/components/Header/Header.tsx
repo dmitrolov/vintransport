@@ -1,21 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import './Header.sass';
+import React from 'react';
+import arrow from './../../../img/arrow.png';
 
-interface HeaderProps {
-
-}
-
-const Header = (props: HeaderProps) => {
-  const [state, setState] = useState(true);
-
-  useEffect(() => {
-    console.log('[Header WORKS!!!]', null);
-  }, [state]);
-
+const Header = () => {
   return (
-    <div className='header'>
-      <button onClick={ () => setState(!state) }>Header WORKS!!!</button>
-    </div>
+    <header>
+      <div className="head">
+        <img src={ arrow } alt='<' />
+        <span>Оплата проезда</span>
+      </div>
+      <nav>
+        <div className="tab active">Билет</div>
+        <div className="tab">Проездной</div>
+      </nav>
+    </header>
   );
 };
 

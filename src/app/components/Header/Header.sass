@@ -1,0 +1,47 @@
+@import "../../../mixins"
+
+.header
+    width: 100%
+
+    &__container
+
+
+.header-navigation
+    padding: 13px 9px 14px 13px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__image
+        height: 21px
+
+    &__text
+        font-family: $title-font
+        font-size: 16px
+
+    &__empty
+        width: 12px
+
+.header-tabs
+    display: flex
+    justify-content: space-between
+
+    &__item
+        flex-grow: 1
+        text-align: center
+        border-bottom: 1px solid #D9D9D9
+
+        &:first-child
+            border-bottom: 2px solid #71B03E
+
+            & > span
+                color: #71B03E
+
+        & > span
+            font-family: $title-font
+            font-size: 18px
+            line-height: 34px
+            color: #999999
+
+
+

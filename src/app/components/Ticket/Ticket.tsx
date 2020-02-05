@@ -13,9 +13,9 @@ const Ticket = (props: TicketProps) => {
   }, [state]);
 
   return (
-    <div className='ticket'>
-      <button onClick={ () => setState(!state) }>Ticket WORKS!!!</button>
-    </div>
+    <>
+
+    </>
   );
 };
 

@@ -1,0 +1,423 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	color: #bcbcbc;
+}
+*, *:hover, *:active, *:visited{
+	outline: none;
+}
+*::-webkit-scrollbar {
+	width: 0px;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background-color: #212121;
+	margin-top: 6.5em;
+}
+
+a{
+	display: none !important;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	background-color: #212121;
+	box-shadow: 0 0 3px 0px #101010;
+	margin-top: -6.5em;
+}
+
+input, input:hover, input:active, input:visited{
+	outline: none;
+}
+
+.head{
+	padding: 1em;
+	font-weight: 400;
+}
+
+.head img{
+	width: 17px;
+	height: auto;
+	margin-right: 1em;
+}
+
+.head span{
+	font-size: 1.3em;
+	color: #bcbcbc;
+	letter-spacing: 0.3px;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.tab{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	flex-grow: 1;
+	text-transform: uppercase;
+	color: #909090;
+	font-size: 0.9em;
+	padding: 1em;
+}
+
+.active{
+	color: #5b9b21;
+	border-bottom: 2px solid #5b9b21;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	margin: 0.5em;
+	padding: 1em;
+	background-color: #303030;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 0px #101010;
+}
+
+.w-100{
+	width: 100%;
+}
+
+.company-info{
+	display: flex;
+	flex-direction: row;
+	font-weight: 400;
+	height: 4em;
+	margin-bottom: 0.3em;
+}
+.company-info img{
+	height: 4em;
+	width: 4em;
+}
+.company-info div{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0.5em;
+	font-size: 0.85em;
+	color: #979797;
+}
+.company-info div p{
+	display: flex;
+	flex-grow: 1;
+}
+.company-info div p:nth-child(1){
+	align-items: flex-start;
+}
+.company-info div p:nth-child(2){
+	align-items: center;
+}
+.company-info div p:nth-child(3){
+	align-items: flex-end;
+}
+
+
+.primary-color{
+	color: #c0c0c0;
+}
+.secondary-color{
+	color: #979797;
+}
+.green-color{
+	color: #5b9b21;
+}
+
+
+.serial::before{
+	content: 'Серия';
+	color: #979797;
+	margin-right: 0.6em;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	margin: 1em;
+}
+
+.logo img{
+	height: 8em;
+	width: 8em;
+}
+
+.number{
+	display: flex;
+	justify-content: center;
+	margin-top: 0.5em;
+}
+.number span{
+	font-size: 2em;
+}
+.number span::before{
+	content: '№';
+}
+
+.caption{
+	display: flex;
+	justify-content: center;
+}
+.caption span{
+	font-size: 0.8em;
+}
+
+.data{
+	display: flex;
+	flex-direction: row;
+	margin: 1em 0;
+}
+.data div{
+	display: flex;
+	width: 100%;
+	flex-grow: 1;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1em;
+}
+.type span:last-child::after{
+	content: ' шт';
+}
+
+.descripton{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-direction: row;
+}
+.descripton span{
+	font-size: 0.6em;
+}
+
+
+
+
+form{
+	display: flex;
+	flex-direction: row;
+}
+
+.form-checkbox img{
+	height: 1.2em;
+	width: 1.2em;
+	margin: 0.1em;
+}
+
+.form-container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-left: 1em;
+}
+.form-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 1.1em;
+	margin-top: 0.15em; 
+}
+.form-header span{
+	font-size: 1.1em;
+}
+.form-header span:after{
+	content: '.00 грн';
+	font-size: 0.7em;
+}
+.form-caption{
+	margin: 1.5em 0 0.5em 0.25em;
+	font-size: 0.8em;
+}
+.form-control{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	margin-left: 0.25em;
+}
+.form-field{
+	border-bottom: 1px solid #5c5c5c;
+	padding: 0.25em 0;
+}
+.form-field input{
+	border: none;
+	background-color: transparent;
+	width: 4.5em;
+	font-size: 2em;
+}
+.form-field span{
+	font-size: 1em;
+	padding-right: 1.5em;
+}
+.form-count{
+	display: flex;
+	flex-direction: row;
+}
+.form-count-in, .form-count-de{
+	display: flex;
+	background-color: transparent;
+	border: none;
+}
+.form-count-in img, .form-count-de img{
+	width: 1.8em;
+	margin: 0.45em;
+}
+
+
+
+.payment{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.payment-amount, .payment-method{
+	display: flex;
+	width: 90%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.payment-amount{
+	align-items: baseline;
+    margin-bottom: 1.35em;
+}
+.payment-caption{
+	display: flex;
+	font-size: 1.2em;
+}
+.payment-summ:after{
+	content: ' грн';
+	font-size: 0.9em;
+	color: #979797;
+}
+.payment-summ span{
+	font-size: 1.25em;
+	font-weight: 700;
+	color: #5b9b21;
+}
+.payment-summ span:nth-child(1){
+	font-size: 2em;
+}
+
+.payment-method{
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #979797;
+	margin-bottom: 1.4em;
+	align-items: center;
+	font-size: 0.95em;
+	font-weight: 300;
+	padding: 0.2em 0;
+}
+.payment-method div{
+	display: inline-flex;
+}
+.payment-cardvalue{
+	color: #fff;
+	font-weight: 400;
+}
+.payment-dropdown img{
+	display: flex;
+	width: 1em;
+	margin-right: 0.9em;
+}
+
+.payment-submit{
+	display: flex;
+	justify-content: center;
+	border: none;
+	width: 98.5%;
+	color: #fff;
+	background-color: #5b9b21;
+	font-size: 1.2em;
+	font-weight: 300;
+	border-radius: 2px;
+	margin-bottom: 1px;
+	padding: 0.355em;
+}
+
+.activate{
+	display: flex;
+	margin: 1em -0.5em -0.75em -0.5em;
+}
+.activate button{
+	display: flex;
+	justify-content: center;
+	border: none;
+	width: 100%;
+	color: #fff;
+	background-color: #5b9b21;
+	font-size: 1.2em;
+	font-weight: 300;
+	border-radius: 2px;
+	padding: 0.355em;
+}
+
+.timer{
+	display: flex;
+	margin: 0 -0.5em -0.75em -0.5em;
+}
+.timer span{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	color: #5b9b21;
+	font-size: 1.65em;
+	font-weight: 700;
+	padding: 0.355em;
+}
+
+.modal{
+	display: inline-flex;
+	position: absolute;
+	width: 96%;
+	height: 15em;
+	margin: 2%;
+}
+.modal-type, .modal-number{
+	margin: 0.5em;
+}
+.modal-number input{
+	height: 2em;
+	width: 100%;
+	margin-bottom: 0.5em;
+	color: #212121;
+	border: none;
+}
+.modal-button{
+	display: flex;
+	justify-content: center;
+	border: none;
+	width: 98.5%;
+	color: #fff;
+	background-color: #5b9b21;
+	font-size: 1.2em;
+	font-weight: 300;
+	border-radius: 2px;
+	margin-bottom: 1px;
+	padding: 0.355em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hidden{
+	display: none;
+}

@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="app">
       <Header/>
-      {isTicketBought ? <Pay onSubmit={() => setIsTicketBought(true)}/> : <Ticket/>}
+      {isTicketBought ? <Ticket/> : <Pay onSubmit={() => setIsTicketBought(true)}/>}
     </div>
   );
 }
